@@ -14,7 +14,7 @@
 <body class="container-fluid">
     <nav class="navbar navbar-expand-lg bg-light navegador">
         <div class="container-fluid bg-color">
-            <img src="./assets/img/logo2.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
+            <img src="../assets/img/logo2.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,17 +51,18 @@
             </div>
         </header>
         <main class="main">
-            <form action="login.php" method="get" enctype="multipart/form-data">
+            <form action="contact.php" method="get" enctype="multipart/form-data">
                 <fieldset class="caja__login">
                     <legend></legend>
                     <div class="login__info">
-                        <h3>Usuario:</h3>
-                        <input type="texto" name="Usuario" placeholder="Usuario" required>
-                        <h3>Contraseña:</h3>
-                        <input type="password" name="Contraseña" placeholder="Contraseña" required><br>
-                        <a href="#">¿olvidaste la contraseña?</a><br>
-                        <input class="btn" type="submit" value="iniciar sesión">
-                        <input class="btn" type="submit" value="Crear cuenta">
+                        <h3>Nombre:</h3>
+                        <input type="texto" name="nombre" placeholder="nombre*" required>
+                        <h3>Apellidos:</h3>
+                        <input type="texto" name="Apellidos" placeholder="Apellidos*" required><br>
+                        <h3>Asunto:</h3>
+                        <input type="texto" name="Asunto" placeholder="Asunto*" required><br>
+                        <textarea name="comentarios" rows="10" cols="40" placeholder="Escriba aqui su problema*" required></textarea><br>
+                        <input class="btn" type="submit" value="enviar">
     
                     </div>
                 </fieldset>
