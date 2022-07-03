@@ -21,25 +21,6 @@
     background-color: aliceblue;
 }
 
-.navegador{
-    display: flex;
-    width: auto;
-    background-color: aliceblue;
-}
-
-.navbar{
-    grid-area: navbar;
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
 .navbar ul li{
     padding: 20px;
     
@@ -50,15 +31,6 @@
     color: black;
     font-family: 'Josefin Sans', sans-serif;
     
-}
-
-.bolsa img{
-    width: 30px;
-}
-
-.logo img{
-    width: 80px;
-    margin-left: 60px;
 }
 
 .header{
@@ -208,10 +180,10 @@ main h4{
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background-color: aqua;
+    background-color: aliceblue;
 }
 .nosotros__img{
-    width: 20px;
+    width: 700px;
 }
 
 @media(max-width:769px){
