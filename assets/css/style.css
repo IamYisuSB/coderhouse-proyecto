@@ -58,30 +58,9 @@
 .main{
     grid-area: main;
 }
-.tarjeta{
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    align-items: center;
-    border: 1px solid black;
-    margin: 50px;
-    border-radius: 10px;
-    padding: 10px;
-
-}
-.tarjeta__titulo{
-    font-size: 20px;
-    margin: 5px 0px;
-}
-
-.tarjeta__descripcion{
-    margin: 5px;
-}
-
-.tarjeta__img{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.precio{
+    text-align: center;
+    color: red;
 }
 
 .btn {
