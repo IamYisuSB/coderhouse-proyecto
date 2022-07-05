@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import "nav.scss" ;
+@import "target.scss" ;
+@import "login.scss" ;
+@import "footer.scss" ;
+@import "nosotros.scss" ;
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px 600px auto 80px;
+    grid-template-areas: "navbar navbar navbar navbar"
+                        "header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    grid-area: header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

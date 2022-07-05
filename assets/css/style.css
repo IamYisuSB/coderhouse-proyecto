@@ -1,216 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+.bg-color {
+  background-color: aliceblue; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 80px 600px auto 80px;
-    grid-template-areas: "navbar navbar navbar navbar"
-                        "header header header header"
-                        "main main main main"
-                        "footer footer footer footer";
-}
-.bg-color{
-    background-color: aliceblue;
-}
-
-.navbar ul li{
-    padding: 20px;
-    
-}
+.navbar ul li {
+  padding: 20px; }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    
-}
+  text-decoration: none;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif; }
 
-.header{
-    grid-area: header;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 50px;
+  font-size: 300%;
+  color: black;
+  justify-content: center;
+  align-items: center; }
 
-/* productos page */ 
-
-.titulo{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-    padding-top: 50px;
-    font-size: 300%;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}
-.main{
-    grid-area: main;
-}
-.precio{
-    text-align: center;
-    color: red;
-}
+.precio {
+  text-align: center;
+  color: red; }
 
 .btn {
-    background-color: #0097d3;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0);
-    color: white;
-    padding: 10px 32px;
-    margin: 11px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+  background-color: #0097d3;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px 32px;
+  margin: 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
+
 .btn1 {
-    display: flex;
-    background-color: #0097d3; 
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0);
-    color: white;
-    padding: 10px 32px;
-    font-size: 16px;
-}
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-/*Login page*/
-.caja__login{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    width:600px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin:40px;
-    border-radius: 10px;
-    padding: 40px;
-}
+  display: flex;
+  background-color: #0097d3;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px; }
 
-.login__info{
-    display: grid;
-    text-align: left;
-    margin: auto;
-}
-.login__info h3{
-    display: flex;
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
-}
-.login__info input{
-    display: flex;
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
+.caja__login {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 40px;
+  border-radius: 10px;
+  padding: 40px; }
 
-}
-.footer__Color{
-    background-color: aliceblue;
-}
+.login__info {
+  display: grid;
+  text-align: left;
+  margin: auto; }
 
-main h4{
-    
-}
-/*contacto page*/
-.main{
-    display: flex;
-    justify-content: center;
-}
-.tarjeta__contacto{
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    width:600px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    margin:40px;
-    border-radius: 10px;
-    padding: 40px;
-}
+.login__info h3 {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center; }
 
-.tarjeta__contacto h3{
-    grid-area: main;
-    display: flex;
-    padding: 30px;
-    font-size: 200%;
-    text-align: start;
-}
-/*Nosotros page*/
-.nosotros__descripcion{
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    background-color: aliceblue;
-}
-.nosotros__img{
-    width: 700px;
-}
+.login__info input {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center; }
 
-@media(max-width:769px){
-    .navbar ul li{
-        padding: 5px;
-        font-size: 12px;
-    }
-    
-    .bolsa img{
-        width: 20px;
-    }
-    
-    .logo img{
-        width: 60px;
-        margin-left: 0px;
-    }
-    footer h5{
-        font-size: 15px;
-    }
-    .redes img{
-        width: 25px;
-    }
-}
-@media(max-width:430px){
-    .navbar ul li{
-        padding: 5px;
-        font-size: 10px;
-        
-    }
-    
-    .bolsa img{
-        width: 15px;
-    }
-    
-    .logo img{
-        width: 60px;
-        margin-left: 0px;
-    }
-    
-    footer h5{
-        font-size: 11px;
-    }
-    .redes img{
-        width: 20px;
-    }
-    .header__img h1{
-        text-align: center;
-        font-size: xx-large;
-        color: white; 
-    }
-}
+.footer__Color {
+  background-color: aliceblue; }
+
+.nosotros__descripcion {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: aliceblue; }
+
+.nosotros__img {
+  width: 700px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 600px auto 80px;
+  grid-template-areas: "navbar navbar navbar navbar" "header header header header" "main main main main" "footer footer footer footer"; }
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center; }
+
+.header {
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px; }
