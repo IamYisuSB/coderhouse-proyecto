@@ -9,24 +9,17 @@
     margin:40px;
     border-radius: 10px;
     padding: 40px;
+    div{
+        display: grid;
+        text-align: left;
+        margin: auto;
+        h3{
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            justify-content: center;
+        }
+    }
 }
 
-.login__info{
-    display: grid;
-    text-align: left;
-    margin: auto;
-}
-.login__info h3{
-    display: flex;
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
 
-}
-.login__info input{
-    display: flex;
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
-
-}

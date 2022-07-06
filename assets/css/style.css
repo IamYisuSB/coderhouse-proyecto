@@ -4,11 +4,10 @@
 
 .navbar ul li {
   padding: 20px; }
-
-.navbar ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Josefin Sans', sans-serif; }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif; }
 
 .titulo {
   display: flex;
@@ -61,23 +60,15 @@
   margin: 40px;
   border-radius: 10px;
   padding: 40px; }
-
-.login__info {
-  display: grid;
-  text-align: left;
-  margin: auto; }
-
-.login__info h3 {
-  display: flex;
-  margin: 5px;
-  padding: 5px;
-  justify-content: center; }
-
-.login__info input {
-  display: flex;
-  margin: 5px;
-  padding: 5px;
-  justify-content: center; }
+  .caja__login div {
+    display: grid;
+    text-align: left;
+    margin: auto; }
+    .caja__login div h3 {
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      justify-content: center; }
 
 .footer__Color {
   background-color: aliceblue; }
